@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="usersRegister_LINK">https://rightchoice042021.000webhostapp.com/registers.php</string>
+    <string name="Login_LINK">https://rightchoice042021.000webhostapp.com/login.php</string>
+    <string name="signup_LINK">https://rightchoice042021.000webhostapp.com/signup.php</string>
+    <string name="GetProvers_LINK">https://rightchoice042021.000webhostapp.com/get_providers_users.php</string>
+    <string name="PREF_FILE">PREF_FILE</string>
+    <string name="root_LINK">https://rightchoice042021.000webhostapp.com/</string>
+    <string name="OderSave_LINK">https://rightchoice042021.000webhostapp.com/save_order.php</string>
+    <string name="usersDataEdit_LINK">https://rightchoice042021.000webhostapp.com/EditUserTable.php</string>
+    <string name="UsersOrderHistory_LINK">https://rightchoice042021.000webhostapp.com/get_order_history.php</string>
+    <string name="userRating_LINK">https://rightchoice042021.000webhostapp.com/user_rating.php</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

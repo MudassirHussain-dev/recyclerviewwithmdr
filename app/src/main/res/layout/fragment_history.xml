@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smoke_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="20dp"
+        android:text="Booked Services"
+        android:textAlignment="center"
+        android:textColor="@color/dark_green"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+<!--
+    <Button
+        android:id="@+id/btn_OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abc" />
+-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_serviceHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/btnNext"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:padding="20dp"-->
+    <!--            android:textSize="18dp"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:background="@drawable/btn_round_corner"-->
+    <!--            android:backgroundTint="@color/dark_green"-->
+    <!--            android:text="NEXT" />-->
+
+</LinearLayout>

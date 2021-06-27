@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.right_choice_project_usman_18_apr_2021">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_icon"
+        android:label="RIGHT CHOICE"
+        android:logo="@drawable/ic_new_logo"
+        android:roundIcon="@drawable/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021">
+        <activity android:name=".ServiceHistoryActivity"></activity>
+        <activity
+            android:name=".ProfileEditActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No" />
+        <activity
+            android:name=".ServiceBookingActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No" />
+        <activity
+            android:name=".users.userui.SubCategoryActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No" />
+        <activity
+            android:name=".users.userui.ProviderListActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No" />
+        <activity
+            android:name=".users.userui.HomeActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021_No">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

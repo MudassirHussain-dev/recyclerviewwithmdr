@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smoke_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Feedback!"
+        android:textAlignment="center"
+        android:textColor="@color/dark_green"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:progressTint="@color/lime_green"
+        android:progressBackgroundTint="@color/white"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:id="@+id/rb_Rating"
+        android:secondaryProgressTint="@color/transparent"
+        />
+
+    <!--&lt;!&ndash;    <EditText&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/editTextTextMultiLine"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/et_white_fill_limegreen_stroke_corner"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:fontFamily="sans-serif"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:gravity="start|top"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:hint="Write Your Feedback Here ..."&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:inputType="textMultiLine"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:padding="7dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:textColor="@color/dark_green"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:textSize="20dp" />&ndash;&gt;-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_round_corner"
+        android:backgroundTint="@color/dark_green"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Send Feedback"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

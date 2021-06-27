@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/smoke_white"
+    tools:context=".ServiceHistoryActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_serviceHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnNext"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="20dp"-->
+<!--        android:textSize="18dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@drawable/btn_round_corner"-->
+<!--        android:backgroundTint="@color/dark_green"-->
+<!--        android:text="NEXT" />-->
+
+</LinearLayout>

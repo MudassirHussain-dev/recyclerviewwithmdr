@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smoke_white"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_app_logo"
+
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/linear_layout_corner_round_effect"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_card_textview_round_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="REGISTER"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Capture Image:"
+                    android:textColor="@color/dark_green" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:orientation="horizontal"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_baseline_account_circle"
+                        android:gravity="center"
+                        android:id="@+id/civ_takeSamplingImage"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/ib_takeSamplingImage"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="-42dp"
+                        android:layout_marginTop="59dp"
+                        android:background="@drawable/bg_camera"
+                        android:src="@drawable/ic_camera"
+                        android:tint="@color/white" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter Name:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Name"
+                    android:inputType="text"
+                    android:maxLength="25"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_name_registerActivity"/>
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:layout_marginStart="35dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="Enter Last Name:"-->
+<!--                    android:textColor="@color/dark_green" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="25dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginEnd="25dp"-->
+<!--                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"-->
+<!--                    android:drawableLeft="@drawable/ic_user"-->
+<!--                    android:drawablePadding="5dp"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:hint="Enter Last Name"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLength="25"-->
+<!--                    android:padding="12dp"-->
+<!--                    android:textColor="@color/dark_green" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter User Name:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter User Name"
+                    android:inputType="text"
+                    android:maxLength="25"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_username_registerActivity"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter Email:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_email__registerActivity"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter CNIC:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter CNIC"
+                    android:inputType="text"
+                    android:maxLength="13"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_cnic_registerActivity"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter Phone Number:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_cell_registerActivity"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Select City:"
+                    android:textColor="@color/dark_green" />
+
+                <Spinner
+                    android:id="@+id/sp_select_city_registerActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/dark_green"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter Address:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Address"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_address_registerActivity"/>
+
+                <!--        <TextView-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="Select Provience:"-->
+                <!--            android:textColor="@color/dark_green"-->
+                <!--            android:fontFamily="serif"-->
+                <!--            android:layout_gravity="left"-->
+                <!--            android:layout_marginTop="-10dp"-->
+                <!--            android:layout_marginStart="25dp"-->
+                <!--            />-->
+
+                <!--        <Spinner-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:background="@drawable/ic_city"-->
+                <!--            android:paddingStart="45dp"-->
+                <!--            android:paddingEnd="30dp"-->
+                <!--            android:layout_marginTop="-10dp"-->
+                <!--            android:spinnerMode="dropdown"-->
+                <!--            android:id="@+id/sp_select_provience"-->
+                <!--            />-->
+
+                <!--        <TextView-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="Select Country:"-->
+                <!--            android:textColor="@color/dark_green"-->
+                <!--            android:fontFamily="serif"-->
+                <!--            android:layout_gravity="left"-->
+                <!--            android:layout_marginTop="-10dp"-->
+                <!--            android:layout_marginStart="25dp"-->
+                <!--            />-->
+
+                <!--        <Spinner-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:background="@drawable/ic_city"-->
+                <!--            android:paddingStart="45dp"-->
+                <!--            android:paddingEnd="30dp"-->
+                <!--            android:layout_marginTop="-10dp"-->
+                <!--            android:spinnerMode="dropdown"-->
+                <!--            android:id="@+id/sp_select_country"-->
+                <!--            />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Enter Password:"
+                    android:textColor="@color/dark_green" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:maxLength="8"
+                    android:padding="12dp"
+                    android:textColor="@color/dark_green"
+                    android:id="@+id/et_password_registerActivity"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_category"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Select Category:"
+                        android:textColor="@color/dark_green" />
+
+                    <Spinner
+                        android:id="@+id/sp_select_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/dark_green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Enter Work Experience:"
+                        android:textColor="@color/dark_green" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/et_white_fill_limegreen_stroke_corner"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Work Experience"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:padding="12dp"
+                        android:textColor="@color/dark_green"
+                        android:id="@+id/et_experience_registerActivity"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_register_RegisterActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/btn_round_corner"
+                    android:backgroundTint="@color/dark_green"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="REGISTER"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_haveAccount_LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="Have An Account? LOGIN"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

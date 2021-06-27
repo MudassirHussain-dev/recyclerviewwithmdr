@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "RIGHT_CHOICE_PROJECT_USMAN_18_APR_2021"
